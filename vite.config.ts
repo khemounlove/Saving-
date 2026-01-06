@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   define: {
-    // This allows process.env.API_KEY to be accessed in the browser
-    'process.env': process.env
+    // This allows process.env.API_KEY to be accessed in the browser safely via text replacement
+    'process.env.API_KEY': JSON.stringify(process.env.API_KEY || ''),
   },
   build: {
     outDir: 'dist',
