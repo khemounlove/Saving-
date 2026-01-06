@@ -6,6 +6,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'recharts', 'jspdf'],
+        },
+      },
+    },
   },
   server: {
     port: 3000,
