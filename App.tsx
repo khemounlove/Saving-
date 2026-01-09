@@ -468,7 +468,7 @@ const App: React.FC = () => {
                         ))}
                       </Pie>
                       <Tooltip 
-                        formatter={(value: number) => `$${value.toLocaleString()}`}
+                        formatter={(value: any) => `$${Number(value || 0).toLocaleString()}`}
                         labelFormatter={(name: string) => CATEGORY_MAP[name as Category] || name}
                         contentStyle={{ 
                           borderRadius: '1.25rem', 
