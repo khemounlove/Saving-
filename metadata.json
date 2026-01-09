@@ -1,5 +1,5 @@
 {
   "name": "WealthWise Tracker",
-  "description": "A clean, mobile-first financial tracking application with AI-powered insights, visual charts, and PDF export capabilities.",
+  "description": "A clean, mobile-first financial tracking application supporting Khmer language, PDF exports, and visual analytics.",
   "requestFramePermissions": []
 }

@@ -1,3 +1,4 @@
+
 export type TransactionType = 'income' | 'expense' | 'saving';
 
 export type Category = 
@@ -39,6 +40,11 @@ export interface Transaction {
   description: string;
   date: string; // ISO string with time
   type: TransactionType;
+}
+
+export interface Budget {
+  category: Category;
+  limit: number;
 }
 
 export interface SpendingSummary {
